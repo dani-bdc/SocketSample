@@ -18,7 +18,7 @@ namespace SocketClient
             IPAddress ip = host.AddressList[0];
             IPEndPoint endPoint = new IPEndPoint(ip, port);
 
-            Thread.Sleep(20000);
+            Thread.Sleep(2000);
             try
             {
                 Socket sender = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
